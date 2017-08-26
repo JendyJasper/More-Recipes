@@ -1,0 +1,57 @@
+body {
+	background-color: #f5f5dc;
+}
+.one {
+	background-color: #696969;
+	font-size: 20px;
+	text-align: right;
+	color: white;
+	margin: 20px;
+	padding: 15px;
+}
+.top {
+    text-align: center;
+    color: blue;
+}
+.one a:link, .one a:visited {
+	color: white;
+}
+
+.one a:hover, .one a:visited, .one a:focus {
+	color: #00ff00;
+}
+
+.avatar {
+	text-align: center;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    text-align: center;
+} 
+
+.navbar {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.more-recipe {
+	color: black;
+	text-align: center;
+	text-decoration: bold;
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.mysearch {
+    align-content:right;
+}
+.area{
+    height: 150px;
+}
+.vote {
+    text-align: left;
+}
