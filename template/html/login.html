@@ -1,73 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="../css/basic.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-</head>
-<body>
-<div class="one" align="left">
+    	<title>Signin Template for Bootstrap</title>
 
-    <div class="one">
+    	<link rel="stylesheet" href="../css/bootstrap.css">
+    	<link href="../css/signin.css" rel="stylesheet">
+  	</head>
 
-<ul class="nav nav-pills">
-	
-<li class="nav-item">
-<a class="nav-link active" href="../main.html">Home</a>
-</li>
+  	<body>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/login.html">Login</a>
-</li>
+    	<div class="container myimage">
+      		<div class="mysignup"><a href="../html/signup.html"><h1>Sign Up Here</h1></a></div>
+      			<form class="form-signin">
+        			<h2 class="form-signin-heading mycolor">Please Sign In</h2>
+        			<label for="inputEmail" class="sr-only">Email address</label>
+        			<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
+        			<label for="inputPassword" class="sr-only">Password</label>
+        			<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        				<div class="checkbox">
+          				<label class="mycolor">
+            			<input type="checkbox" value="remember-me"> Remember me
+          				</label>
+        			</div>
+        			<button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+      			</form>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/signup.html">Signup</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
-</li>
-
-<li class="nav-item">
-	<a class="nav-link" href="../html/favoriterecipes.html"> My Favorite Recipes</a>
-</li>
-
-<li class="nav-item">
-	<a class="nav-link" href="../html/recipedetails.html">Recipe Details</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myprofile.html"> My Profile</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myrecipes.html">My Recipes</a>
-</li>
-
-</ul>
-
-</div>
-</div>
-<hr>
-<div class="more-recipe">
-	<p> Welcome to More-Recipes <br>
-		More-Recipes provides a platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.
-	</p>
-</div>
-<hr>
-    <div class="myform">
-	<form class="form-control">
-	<div class="avatar"><img src="../images/avatar1.jpg"></div>
-		<legend><b>Login To Your Account</b></legend>
-		<label>Username:</label> <br>
-		<input type="text" name="username" placeholder="Enter Email or Username" required class="form-control"><br>
-		<label>Password</label> <br>
-		<input type="password" name="password" placeholder="Enter your password" required class="form-control"><br>
-		Remember me: <input type="checkbox" name="checkbox"> <br>
-		<input type="submit" name="submit" value="Login" class="btn btn-success form-group"> 
-		<a href="../html/signup.html"><input type="button" name="signup" value="Signup" class="btn btn-success form-group"></a>
-	</form>
-</div>
-
-
-</body>
+    	</div>
+  </body>
 </html>

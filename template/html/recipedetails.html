@@ -1,69 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/basic.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<title>Recipe Details</title>
-</head>
-<body>
-<div class="one">
-<div class="one">
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<ul class="nav nav-pills">
-	
-<li class="nav-item">
-<a class="nav-link active" href="../main.html">Home</a>
-</li>
+    	<title>Recipe Details</title>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/login.html">Login</a>
-</li>
+    	<link rel="stylesheet" href="../css/bootstrap.css">
 
-<li class="nav-item">
-<a class="nav-link" href="../html/signup.html">Signup</a>
-</li>
+    	<link href="../css/nav-top-bar.css" rel="stylesheet">
+  	</head>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
-</li>
+  	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+     
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+           				<a class="nav-link" href="../html/myrecipes.html">My Recipes</a>
+         			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
+            		</li>
+            		<li class="nav-item">
+                		<a class="nav-link" href="../html/favoriterecipes.html">Favorited</a>
+          			</li>
+          
+        		</ul>
+        		<form class="form-inline my-2 my-lg-0">
 
-<li class="nav-item">
-	<a class="nav-link" href="../html/favoriterecipes.html"> My Favorite Recipes</a>
-</li>
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="../html/login.html">LOGIN</a></button><br>
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="../html/SIGNUP.html">SIGNUP</a></button>
+        		</form>
+      		</div>
+    	</nav><br>
+    	<div class="container">
+      		<div class="jumbotron">
+        		<h1>Recipe 1 details</h1>
+        		<p class="lead">More-Recipes provides a platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.  Suppose a user comes up with a food recipe,  he/she can post it on More-Recipes and  get feedback in form of reviews and votes from other users who explore that recipe. Users can also keep a list of their favorite recipes on the application.</p>
+        		<div><img src="../images/top1.jpeg"></div>
+      		</div>
+    	</div>
 
-<li class="nav-item">
-	<a class="nav-link" href="../html/recipedetails.html">Recipe Details</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myprofile.html"> My Profile</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myrecipes.html">My Recipes</a>
-</li>
 
-</ul>
-
-</div>
-
-</div>
-<hr>
-<div class="more-recipe">
-	<p> Welcome to More-Recipes <br>
-		More-Recipes provides a platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.
-	</p>
-</div>
-<hr>
-<div class="top">
-    <h2> Recipe Details</h2>
-    
-</div>
-<div class="form-control">
-    <form class="form-control">
-    <label>Post Review</label>
-    <textarea class="form-control area">Enter your review here</textarea> <br>
-    <input type="submit" name="review" class="btn btn-success" value="Post Review">
-    <div class="vote"><img src="../images/upvote.jpg"><img src="../images/downvote.jpg"></div>
-    </form>
-</div>
-</body>
+    	<div class="form-control container">
+    		<form class="form-control">
+    			<label>Post Review</label>
+    			<textarea class="form-control area">Enter your review here</textarea> <br>
+    			<input type="submit" name="review" class="btn btn-success" value="Post review">
+    			<div class="vote"><img src="../images/upvote.jpg"><img src="../images/downvote.jpg"></div>
+    		</form>
+		</div>
+  	</body>
 </html>

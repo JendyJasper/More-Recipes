@@ -1,109 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/basic.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/basic.css">
     <script type="text/javascript"src="../js/basic.js"></script>
-    <title>My Recipes</title>
+	<title>My Recipes</title>
 </head>
 <body>
-<div class="one">
-    <div class="one">
-
-<ul class="nav nav-pills">
-    
-<li class="nav-item">
-<a class="nav-link active" href="../main.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="../html/login.html">Login</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="../html/signup.html">Signup</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
-</li>
-
-<li class="nav-item">
-    <a class="nav-link" href="../html/favoriterecipes.html"> My Favorite Recipes</a>
-</li>
-
-<li class="nav-item">
-    <a class="nav-link" href="../html/recipedetails.html">Recipe Details</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="../html/myprofile.html"> My Profile</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="../html/myrecipes.html">My Recipes</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
-<hr>
-<div class="more-recipe">
-    <p> Welcome to More-Recipes <br>
-        More-Recipes provides a platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.
-    </p>
-</div>
-<hr>
-<div class="top">
-    <h2>My Recipes</h2>
-    
-</div>
-
-<div class="container form-control">
-    <form class="form-control">
-        <label> Add A Recipe </label>
-        <input type="text" name="recipename" placeholder="Enter recipe name" class="form-control"><br>
-        <textarea class="form-control">Add a recipe</textarea>
-        <input type="submit" name="addrecipe" value="Add Recipe" class="btn btn-primary">
-    </form>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+     
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/recipedetails.html">Recipes Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/favoriterecipes.html">Favorited</a>
+                </li>
+          
+            </ul>
+        </div>
+        </nav><br>
+    <hr>
+    <div class="container">
     </div>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Top Recipes</h1>
+            <p>This is where you see the best recipes. Do you know you can be a better cook? Check for top recipe and increase your skill.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    <hr>
+    <div class="top">
+        <h2>My Recipes</h2>
+    
+    </div>
+
     <br>
 
+    <div class="container">
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Recipe name</th>
+                    <th>Recipe Details</th>
+                    <th>Modify</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
 
-<table class="table table-hover table-responsive">
-<h2 class="top">Recipes</h2><br>
-<thead>
-<tr>
-<th>Recipe name</th>
-<th>Recipe Details</th>
-<th>Modify</th>
-<th>Delete</th>
-</tr>
-</thead>
+            
+            <tbody>
+                <tr>
+                    <td><a href="#">My recipe1 name</a></td>
+                    <td>My recipe1 deatails</td>
+                    <td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></td>
+                    <td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">My recipe2 name</a></td>
+                    <td>My recipe2 deatails</td>
+                    <td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></></td>
+                    <td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">My recipe3 name</a></td>
+                    <td>My recipe3 deatails</td>
+                    <td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></></td>
+                    <td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
 
-<tr>
-<tbody>
-<tr>
-<td><a href="#">My recipe1 name</a></td>
-<td>My recipe1 deatails</td>
-<td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></td>
-<td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
-</tr>
-<tr>
-<td><a href="#">My recipe2 name</a></td>
-<td>My recipe2 deatails</td>
-<td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></></td>
-<td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
-</tr>
-<tr>
-<td><a href="#">My recipe3 name</a></td>
-<td>My recipe3 deatails</td>
-<td><input type="button" name="modify" value="Modify" class="btn btn-warning" onclick="confirmModify()"></></td>
-<td><input type="button" name="modify" value="Delete" class="btn btn-danger" onclick="getConfirmation()"></td>
+                </tr>
+            </tbody>
+            </table>
+</div>
 
-</tr>
-</tbody>
-</table>
 
 </body>
 </html>

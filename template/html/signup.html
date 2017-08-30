@@ -1,95 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-     <link rel="stylesheet" type="text/css" href="../css/basic.css">
-     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Signup</title>
-</head>
-<body>
-<div class="one">
-    <div class="one">
+    	<title>Signin Template for Bootstrap</title>
 
-<ul class="nav nav-pills">
-	
-<li class="nav-item">
-<a class="nav-link active" href="../main.html">Home</a>
-</li>
+    	<link rel="stylesheet" href="../css/bootstrap.css">
+    	<link href="../css/signin.css" rel="stylesheet">
+  	</head>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/login.html">Login</a>
-</li>
+  	<body>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/signup.html">Signup</a>
-</li>
+    	<div class="container myimage">
+      		<div class="mysignup"><a href="../html/login.html"><h1>Login Here</h1></a></div>
+      			<form class="form-signin">
+        			<h2 class="form-signin-heading mycolor">Please Signup</h2>
+        			<label for="inputname" class="sr-only">Enter Full Name</label>
+        			<input type="text" id="inputEmail" class="form-control" placeholder="Full Name" required autofocus><br>
+        			<label for="inputusername" class="sr-only">Username</label>
+        			<input type="text" id="inputPassword" class="form-control" placeholder="Username" required><br>
+        			<label for="inputEmail" class="sr-only">Email address</label>
+        			<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
+        			<label for="inputPassword" class="sr-only">Password</label>
+        			<input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+        			<input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" required>
+        			<div class="checkbox">
+          				<label class="mycolor">
+            			<input type="checkbox" value="remember-me"> Do you agree to our <a href="#">Terms & conditions?</a>
+          				</label>
+        			</div>
+        			<button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+      			</form>
 
-<li class="nav-item">
-<a class="nav-link" href="../html/toprecipes.html">Top Recipes</a>
-</li>
-
-<li class="nav-item">
-	<a class="nav-link" href="../html/favoriterecipes.html"> My Favorite Recipes</a>
-</li>
-
-<li class="nav-item">
-	<a class="nav-link" href="../html/recipedetails.html">Recipe Details</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myprofile.html"> My Profile</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link" href="../html/myrecipes.html">My Recipes</a>
-</li>
-
-</ul>
-
-</div>
-</div>
-<hr>
-<div class="more-recipe">
-	<p> Welcome to More-Recipes <br>
-		More-Recipes provides a platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.
-	</p>
-</div>
-<hr>
-<div class="myform">
-<form class="box form-control" method="PUT" action="/process">
-    <div class="avatar"> <img src="../images/avater2.png"></div>
-    <legend><b>Create A New Account</b></legend>
-	<label> First Name:</label><br>
-	<input type="text" name="firstname" placeholder="Enter your first name" required="firstname" class="form-control"> <br>
-	<label>Last Name:</label> <br>
-	<input type="text" name="lastname" placeholder="Enter your last name" required="lastname" class="form-control"> <br>
-	<label>Username:</label> <br>
-	<input type="text" name="username" placeholder="Enter Username" required="username" class="form-control"> <br>
-	<label>Email:</label><br>
-	<input type="Email" name="email" placeholder="eg@mymail.com" required="email" class="form-control"> <br>
-	<label>Phone Number:</label><br> 
-	<input type="tel" name="number" placeholder="Without + symbol" required="number" class="form-control"> <br>
-	<label>Address:</label><br> 
-	<input type="Address" name="address" class="form-control" placeholder="Enter your address"> <br>
-	<label>Gender:</label><br> 
-	<select class="form-control">
-		<option>Male</option>
-		<option>Female</option>
-	</select><br>
-	<label>Date of Birth: </label><br>
-	<input type="date" name="dateOfBirth" placeholder="date of birth" class="form-control"><br>
-	<label>Nationality:</label><br> 
-	<input type="text" name="country" class="form-control" placeholder="Enter your country"><br>
-	<label>Password:</label><br> 
-	<input type="Password" name="password" placeholder="Enter Paswword" required="password" minlength="8" class="form-control"><br>
-	<label>Confrim Password:</label><br> 
-	<input type="Password" name="password" placeholder="Confrim Paswword" required="password" minlength="8" class="form-control"><br>
-	<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-<input type="submit" name="submit" value="Signup" class="btn btn-success form-group"> 
-		<a href="../html/login.html"><input type="button" name="signup" value="Login" class="btn btn-success form-group"></a>
-
-</form>
-</div>
-
-</body>
+    	</div>
+  	</body>
 </html>
