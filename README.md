@@ -1,2 +1,2 @@
 # More-Recipes
-All the files used for a successful development of the more-recipies application are housed here. The server side, client side, the ui templates are all contained here.
+All the api routes, controllers, models and other neccessary files needed for the server side of the more-recipes application are housed here.
