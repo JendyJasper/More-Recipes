@@ -2,16 +2,17 @@
   "development": {
     "username": "Jendy Jasper",
     "password": null,
-    "database": "myrecipes",
+    "database": "more-recipes",
     "host": "127.0.0.1",
+    "port": 5432,
     "dialect": "postgres"
   },
   "test": {
     "username": "Jendy Jasper",
     "password": null,
-    "database": "myrecipes",
+    "database": "more-recipes",
     "host": "127.0.0.1",
+    "port": 5432,
     "dialect": "postgres"
   }
-  
 }

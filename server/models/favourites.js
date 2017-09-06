@@ -1,0 +1,21 @@
+export default (sequelize, DataTypes) => {
+  const Favourite = sequelize.define('Favourite', {
+    userId: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+    },
+    recipeId: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+    },
+  }); 
+  Favourite.associate = (models) => {
+    Favourite.belongsTo(models.Recipe, {
+      foreignKey: {
+        name: 'userId',
+        key: 'id'
+      },
+    })
+  };
+  return Favourite;
+};

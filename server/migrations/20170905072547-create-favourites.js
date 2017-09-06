@@ -1,17 +1,20 @@
-module.exports = {
+module.exports =  {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('MyRecipes', {
+    return queryInterface.createTable('Favourites', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
+       
       },
-      title: {
-        type: Sequelize.STRING
+      userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
-      content: {
-        type: Sequelize.STRING
+      recipeId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
@@ -23,7 +26,7 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('MyRecipes');
+  down(queryInterface, Sequelize) {
+    return queryInterface.dropTable('Favourites');
   }
 };
