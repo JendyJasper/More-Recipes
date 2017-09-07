@@ -33,7 +33,7 @@ export default (sequelize, DataTypes) => {
           foreignKey: {
             name: 'userId',
             key: 'id',
-          }
+          },
         });
      };
   return User;

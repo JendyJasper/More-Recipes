@@ -10,12 +10,21 @@ export default {
       userId: {
         type: Sequelize.INTEGER,
         required: true,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'User',
+          key: 'id'
+        },
       },
       recipeId: {
         type: Sequelize.INTEGER,
-        required: true,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Recipes',
+          key: 'id'
+        },
       },
       content: {
         type: Sequelize.TEXT,
@@ -32,7 +41,7 @@ export default {
       }
     });
   },
-  down(queryInterface, Sequelize) {
+  down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Reviews');
   }
 };

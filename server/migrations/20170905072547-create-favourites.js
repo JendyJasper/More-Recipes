@@ -1,4 +1,4 @@
-module.exports =  {
+export default {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Favourites', {
       id: {
@@ -10,11 +10,21 @@ module.exports =  {
       },
       userId: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'User',
+          key: 'id'
+        },
       },
       recipeId: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Recipe',
+          key: 'id'
+        },
       },
       createdAt: {
         allowNull: false,
@@ -26,7 +36,7 @@ module.exports =  {
       }
     });
   },
-  down(queryInterface, Sequelize) {
+  down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Favourites');
   }
 };
