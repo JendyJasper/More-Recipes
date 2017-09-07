@@ -23,6 +23,24 @@ const UserController = {
             message: error
         }));
   },
-};
+  login(req, res) {
+    return user
+      .findOne({
+        where: { 
+            username: req.body.username,
+            password: req.body.password
+         },
+      })
+      .then((user) => {
+          if (!user) {
+              return res.status(404).send({
+                  message: 'User not found! Please create an account'
+              });
+          }
 
+        return res.status(200).send(user)
+        });
+    },
+};
+  
 export default UserController;
