@@ -23,7 +23,7 @@ const RecipeController = {
       }));
   },
 getRecipe(req, res) {
-  return Recipe
+  return recipe
   .findAll({})
   .then((recipes) => {
     if(recipes.length < 1) {
@@ -38,7 +38,7 @@ getRecipe(req, res) {
 },
 
 deleteARecipe(req, res){
-  return Recipe
+  return recipe
   .destroy({
     where: {
       id: req.params.recipeId,
@@ -65,7 +65,7 @@ deleteARecipe(req, res){
 },
 
 modifyRecipe(req, res){
-  return Recipe
+  return recipe
   .update(req.body, {
     where: {
       id: req.params.recipeId
