@@ -16,6 +16,7 @@ module.exports = (app) => {
 
   //User routes
   app.post('/api/users/signup', UserController.addUser);
+  app.post('/api/users/signin', UserController.login),
 
   //votes routes
   app.post('/api/upvotes', VotesControler.addVote);
