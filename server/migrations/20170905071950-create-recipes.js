@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Recipes', {
           id: {
@@ -26,7 +26,12 @@ module.exports = {
         }, 
           userId: {
           type: Sequelize.INTEGER,
-           allowNull: false 
+           allowNull: false,
+           onDelete: 'CASCADE',
+           references: {
+             model: 'Recipes',
+             key: 'id'
+           }, 
         }, 
           createdAt: {
           allowNull: false,
@@ -38,7 +43,7 @@ module.exports = {
         }
       });
   },
-  down: function(queryInterface, Sequelize) {
+  down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Recipes');
   }
 };
