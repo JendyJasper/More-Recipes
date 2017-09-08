@@ -5,7 +5,7 @@ const seq = {
     username:  process.env.USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
-    host: process.env.USERNAME,
+    host: process.env.HOST,
     port: 5432,
     dialect: process.env.DIALECT
   },
@@ -13,7 +13,7 @@ const seq = {
     username:  process.env.USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
-    host: process.env.USERNAME,
+    host: process.env.HOST,
     port: 5432,
     dialect: process.env.DIALECT
   }

@@ -9,8 +9,9 @@ const RecipeController = {
         description: req.body.description,
         details: req.body.details,
         instructions: req.body.instructions,
-        userId: req.body.userId
+        userId: req.body.userId,
       })
+
       .then(() => {
         res.send({
             status: 'Success',
@@ -19,7 +20,7 @@ const RecipeController = {
       })
       .catch(error => res.status(400).send({
         status: false,
-        message: error
+        message: 'UserId not valid'
       }));
   },
 getRecipe(req, res) {

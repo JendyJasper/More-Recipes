@@ -41,7 +41,7 @@ const UserController = {
           else{
             
             const token = jwt.sign({
-                username: user.username }, 
+                id: user.id }, 
                 process.env.SIGNATURE);
 
             return res.json({
