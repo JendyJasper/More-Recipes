@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Recipes', {
           id: {
@@ -29,7 +29,7 @@ export default {
            allowNull: false,
            onDelete: 'CASCADE',
            references: {
-             model: 'Recipes',
+             model: 'Users',
              key: 'id'
            }, 
         }, 
