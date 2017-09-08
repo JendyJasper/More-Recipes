@@ -14,7 +14,6 @@ const ReviewsController = {
                 status: 'Success',
                 message: 'Review added successfully'
             });
-
         })
         .catch (error => res.status(400).send({
             status: false,

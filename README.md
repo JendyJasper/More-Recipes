@@ -1,1 +1,1 @@
-This is the login and signup api for the more-recipes application.
+This is where the controllers, routes, models and migration files that allows a user to post a review are stored
