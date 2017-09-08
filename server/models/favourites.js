@@ -15,7 +15,13 @@ export default (sequelize, DataTypes) => {
         name: 'recipeId',
         key: 'id'
       },
-    })
-  };
+    }),
+    Favourite.belongsTo(models.User, {
+      foreignKey: {
+        name: 'userId',
+        key: 'id'
+      },
+    });
+  }
   return Favourite;
 };

@@ -2,6 +2,7 @@ import RecipeController from '../controllers/recipe';
 import UserController from '../controllers/user';
 import VotesControler from '../controllers/votes';
 import ReviewsController from '../controllers/reviews';
+import FavouriteRecipe from '../controllers/favourites'
 
 module.exports = (app) => {
   app.get('/api',(req,res) => res.status(200).send ({
@@ -20,6 +21,11 @@ module.exports = (app) => {
 
   //votes routes
   app.post('/api/upvotes', UserController.verifyToken, VotesControler.addVote);
+
+  //favourites routes
+  // app.get('/api/users/:userId/recipes', UserController.verifyToken, favouriteRecipe.addFavourite);
+  app.post('/api/users/favourites', UserController.verifyToken, FavouriteRecipe.addFavourite);
+  
 
   //reviews routes
   app.post('/api/recipes/:recipeId/reviews', UserController.verifyToken, ReviewsController.addReview)
