@@ -24,8 +24,7 @@ export default (sequelize, DataTypes) => {
           name: 'userId',
           key: 'id'
         },
-      })
-       
+      })      
   };
   return Review;
 };
