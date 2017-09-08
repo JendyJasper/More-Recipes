@@ -25,7 +25,11 @@ const FavouriteRecipe = {
 
   getFavourite(req, res){
     return favourite
-    .findAll()
+    .findAll({
+    where: {
+      userId: req.params.userId
+    },
+    })
     .then((favourite) => {
       if(favourite.length < 1){
         return res.status(200).send({

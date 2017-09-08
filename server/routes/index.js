@@ -23,7 +23,7 @@ module.exports = (app) => {
   app.post('/api/upvotes', UserController.verifyToken, VotesControler.addVote);
 
   //favourites routes
-  // app.get('/api/users/:userId/recipes', UserController.verifyToken, favouriteRecipe.addFavourite);
+  app.get('/api/users/:userId/recipes', UserController.verifyToken, FavouriteRecipe.getFavourite);
   app.post('/api/users/favourites', UserController.verifyToken, FavouriteRecipe.addFavourite);
   
 
