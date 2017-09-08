@@ -1,11 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import Sequelize from 'sequelize';
-const basename = path.basename(module.filename);
+const basename  = path.basename(module.filename);
 const env = process.env.NODE_ENV || 'development';
-import dbConfig from '../config/config.json';
+const config = require(__dirname + '/../config/config.js')[env];
 const db = {};
-const config = dbConfig[env];
 
 let sequelize;
 if (config.use_env_variable) {
