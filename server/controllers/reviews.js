@@ -5,8 +5,9 @@ const ReviewsController = {
     addReview(req, res) {
         return review 
         .create({
+            where: {
+            id: req.params.recipeId},
             userId: req.body.userId,
-            recipeId: req.params.recipeId,
             content: req.body.content
         })
         .then(() => {

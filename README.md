@@ -1,1 +1,5 @@
-This is where the controllers, routes, models and migration files that allows a user to post a review are stored
+
+# More-Recipes
+All the api routes, controllers, models and other neccessary files needed for the server side of the more-recipes 
+application are housed here. server
+
