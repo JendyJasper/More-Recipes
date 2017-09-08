@@ -1,2 +1,4 @@
 # More-Recipes
-This is the UI templates that will power the more recipes application. It contains all the JS files, images, css and html pages neccessary for the ui of the application.
+All the files used for a successful development of the more-recipies application are housed here. 
+The server side, client side, the ui templates are all contained here.
+
