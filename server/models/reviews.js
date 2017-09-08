@@ -2,17 +2,10 @@ export default (sequelize, DataTypes) => {
   const Review = sequelize.define('Review', {
     userId: {
       type: DataTypes.INTEGER,
-      required: true,
-       allowNull: false
-    },
-    recipeId: {
-      type: DataTypes.INTEGER,
-      required: true,
        allowNull: false
     },
     content: {
       type: DataTypes.TEXT,
-      required: true,
        allowNull: false
     },
   }); 

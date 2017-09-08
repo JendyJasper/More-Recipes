@@ -1,1 +1,1 @@
-Here houses the recipe route, recipe controller, recipe migration file, and recipe model
+This is the login and signup api for the more-recipes application.
