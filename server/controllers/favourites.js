@@ -1,13 +1,13 @@
 import models from '../models';
-const favourite = models.Favourites;
+const favourite = models.Favourite;
 
 
-const favouriteRecipe = {
+const FavouriteRecipe = {
   addFavourite(req, res) {
     return favourite
     .create({
       recipeId: req.body.recipeId,
-      userId: req.body.recipeId
+      userId: req.body.userId
     })
     .then(() => {
       res.send ({
@@ -23,9 +23,13 @@ const favouriteRecipe = {
   },
 
 
-  getFavourites(req, res){
-    return Favourite
-    .findAll()
+  getFavourite(req, res){
+    return favourite
+    .findAll({
+    where: {
+      userId: req.params.userId
+    },
+    })
     .then((favourite) => {
       if(favourite.length < 1){
         return res.status(200).send({
@@ -39,3 +43,5 @@ const favouriteRecipe = {
     })
   }
 }
+
+export default FavouriteRecipe;
