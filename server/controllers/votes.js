@@ -21,6 +21,22 @@ const VotesController = {
   }));
   },
   
+
+  upVote(req, res) {
+      return vote
+      .findAll({
+          where: {
+              recipeId: req.params.recepeid
+          }
+      })
+      .then((vote) => {
+          if(vote){
+              vote.update({
+                  rate: vote.rate + 1
+              })
+          }
+      })
+  }
 };
 
 export default VotesController;

@@ -1,6 +1,6 @@
 import RecipeController from '../controllers/recipe';
 import UserController from '../controllers/user';
-import VotesControler from '../controllers/votes';
+//import VotesControler from '../controllers/votes';
 import ReviewsController from '../controllers/reviews';
 import FavouriteRecipe from '../controllers/favourites'
 
@@ -20,7 +20,7 @@ module.exports = (app) => {
   app.post('/api/users/signin', UserController.login),
 
   //votes routes
-  app.post('/api/upvotes', UserController.verifyToken, VotesControler.addVote);
+  //app.post('/api/upvotes', UserController.verifyToken, VotesControler.addVote);
 
   //favourites routes
   app.get('/api/users/:userId/recipes', UserController.verifyToken, FavouriteRecipe.getFavourite);
