@@ -1,1 +1,1 @@
- nodemon --watch server --exec babel-node ./bin/www
+npm start
